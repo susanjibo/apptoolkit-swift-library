@@ -1,0 +1,10 @@
+clean: true
+module: AppToolkit
+module-version: 0.1.0
+author: Jibo
+author_url: https://www.jibo.com
+github_url: https://github.com/jiborobot/apptoolkit-swift-library
+xcodebuild_arguments: [-project, AppToolkit.xcodeproj, -scheme, AppToolkit, -sdk, iphoneos]
+copyright: '© 2018 Jibo, Inc.'
+output: build/documentation
+hide_documentation_coverage: true

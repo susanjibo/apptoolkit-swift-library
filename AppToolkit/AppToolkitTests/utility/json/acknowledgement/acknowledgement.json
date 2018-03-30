@@ -1,0 +1,12 @@
+{
+    "ResponseHeader": {
+        "SessionID": "12345",
+        "RobotID": "cherrio-potato-onion-toe",
+        "TransactionID": "79054025255fb1a26e4bc422aef54eb4",
+    },
+    "Response": {
+        "Value": "Success",
+        "ResponseCode": 202,
+        "ResponseString": "Accepted",
+    }
+}

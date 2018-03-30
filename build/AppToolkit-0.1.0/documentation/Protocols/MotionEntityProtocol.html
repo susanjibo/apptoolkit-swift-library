@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MotionEntityProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/MotionEntityProtocol" class="dashAnchor"></a>
+    <a title="MotionEntityProtocol Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">AppToolkit Docs</a></p>
+        <p class="header-right"><a href="https://github.com/jiborobot/apptoolkit-swift-library"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">AppToolkit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MotionEntityProtocol Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Battery.html">Battery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CallbackInfo.html">CallbackInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigInfo.html">ConfigInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DisplayInfo.html">DisplayInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorResponse.html">ErrorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchAssetInfo.html">FetchAssetInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GetConfigInfo.html">GetConfigInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HeadTouchInfo.html">HeadTouchInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HeadTouchInfo/HeadSensors.html">– HeadSensors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListenInfo.html">ListenInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListenInfo/ListenType.html">– ListenType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LookAtAchievedInfo.html">LookAtAchievedInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Mixers.html">Mixers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ModelObject.html">ModelObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MotionInfo.html">MotionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Position.html">Position</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SayCompletedInfo.html">SayCompletedInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenGestureInfo.html">ScreenGestureInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenGestureInfo/ScreenGestureType.html">– ScreenGestureType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SetConfigInfo.html">SetConfigInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SetConfigOptions.html">SetConfigOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TakePhotoInfo.html">TakePhotoInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TrackedEntityInfo.html">TrackedEntityInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WiFi.html">WiFi</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ApiError.html">ApiError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Camera.html">Camera</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CameraResolution.html">CameraResolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommandError.html">CommandError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DisplayViewState.html">DisplayViewState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EntityType.html">EntityType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventMessageError.html">EventMessageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventType.html">EventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LookAtTargetType.html">LookAtTargetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RobotDisconnectCode.html">RobotDisconnectCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ScreenGestureSwipeDirection.html">ScreenGestureSwipeDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ScreenGestureType.html">ScreenGestureType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VideoType.html">VideoType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10AppToolkit4AreaP">Area</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BatteryProtocol.html">BatteryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CommandLibraryInterface.html">CommandLibraryInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConfigInfoProtocol.html">ConfigInfoProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListenEntityProtocol.html">ListenEntityProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MixersProtocol.html">MixersProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MotionEntityProtocol.html">MotionEntityProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PositionProtocol.html">PositionProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RobotInfoProtocol.html">RobotInfoProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenGestureEntityProtocol.html">ScreenGestureEntityProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SetConfigOptionsProtocol.html">SetConfigOptionsProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TrackedEntityProtocol.html">TrackedEntityProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WiFiProtocol.html">WiFiProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AngleVector.html">AngleVector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:10AppToolkit6CircleV">Circle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ImageData.html">ImageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LPSPosition.html">LPSPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:10AppToolkit9RectangleV">Rectangle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:10AppToolkit5RobotV">Robot</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ScreenGestureListenParams.html">ScreenGestureListenParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ScreenRectangle.html">ScreenRectangle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Speaker.html">Speaker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpeakerId.html">SpeakerId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpeechInfo.html">SpeechInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Vector2.html">Vector2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Vector3.html">Vector3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10AppToolkit12LookAtEntitya">LookAtEntity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MotionEntityProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MotionEntityProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Protocol for when Jibo sees motion.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit20MotionEntityProtocolP9intensitySdSgv"></a>
+                    <a name="//apple_ref/swift/Property/intensity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit20MotionEntityProtocolP9intensitySdSgv">intensity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>minimum = <code>0</code>, maximum = <code>1</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">intensity</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit20MotionEntityProtocolP11worldCoordsAA7Vector3VSgv"></a>
+                    <a name="//apple_ref/swift/Property/worldCoords" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit20MotionEntityProtocolP11worldCoordsAA7Vector3VSgv">worldCoords</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>3D point of the motion in space.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">worldCoords</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3.html">Vector3</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit20MotionEntityProtocolP12screenCoordsAA15ScreenRectangleVSgv"></a>
+                    <a name="//apple_ref/swift/Property/screenCoords" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit20MotionEntityProtocolP12screenCoordsAA15ScreenRectangleVSgv">screenCoords</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>2D coordinate of the motion detected relative to Jibo&rsquo;s screen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">screenCoords</span><span class="p">:</span> <span class="kt"><a href="../Structs/ScreenRectangle.html">ScreenRectangle</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2018 Jibo, Inc.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

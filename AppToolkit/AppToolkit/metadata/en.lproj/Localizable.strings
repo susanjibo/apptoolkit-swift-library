@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  JiboSdk
+
+  Created by Vasily Kolosovsky on 10/6/17.
+  Copyright © 2017 Jibo Inc. All rights reserved.
+*/
+
+"response.ok" = "OK";
+"response.created" = "Created";
+"response.accepted" = "Accepted";
+"response.badRequest" = "Bad Request";
+"response.forbidden" = "Forbidden";
+"response.notFound" = "Not Found";
+"response.notAcceptable" = "Not Acceptable";
+"response.requestTimeout" = "Request Timeout";
+"response.conflict" = "Conflict";
+"response.preconditionFailed" = "Precondition Failed";
+"response.internalError" = "Internal Error";
+"response.serviceUnavailable" = "Service Unavailable";
+"response.versionNotSupported" = "Version Not Supported";
+
+"response.description.ok" = "The Command was accepted and executed";
+"response.description.created" = "Entity creation command created";
+"response.description.accepted" = "The command was accepted and will begin execution";
+"response.description.badRequest" = "Badly formatted request";
+"response.description.forbidden" = "Request is legal but not authorized for this application";
+"response.description.notFound" = "The Command request is not a supported command";
+"response.description.notAcceptable" = "The data in the Command is not acceptable";
+"response.description.requestTimeout" = "Unable to marshal the resources and set-up the command within the time limits set in the ROM Controller";
+"response.description.conflict" = "There is a conflicting Command already executing";
+"response.description.preconditionFailed" = "The execution of the Command requires the execution of a prior Command";
+"response.description.internalError" = "The ROM Controller has crashed or hit a different error that was unexpected";
+"response.description.serviceUnavailable" = "The ROM Controller is temporarily unavailable. The Robot SSM may be rebooting something.";
+"response.description.versionNotSupported" = "The Version requested is not supported";

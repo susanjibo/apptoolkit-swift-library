@@ -1,0 +1,6 @@
+{
+	"Type": "TakePhoto",
+	"Resolution": "medRes",
+	"Camera": "left",
+	"Distortion": true
+}

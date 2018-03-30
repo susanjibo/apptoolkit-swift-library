@@ -1,0 +1,9 @@
+{
+	"Type": "LookAt",
+	"LookAtTarget": {
+		"ScreenCoords": [1, 2]
+	},
+	"TrackFlag": true,
+	"LevelHeadFlag": true
+}
+

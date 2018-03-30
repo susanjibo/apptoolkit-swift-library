@@ -1,0 +1,8 @@
+{
+	"Type": "LookAt",
+	"LookAtTarget": {
+		"Position": [1, 2, 3]
+	},
+	"TrackFlag": true,
+	"LevelHeadFlag": true
+}

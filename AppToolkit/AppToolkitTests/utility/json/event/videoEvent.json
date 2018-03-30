@@ -1,0 +1,13 @@
+{
+    "EventHeader": {
+        "SessionID": "12345",
+        "RobotID": "cherrio-potato-onion-toe",
+        "TransactionID": "79054025255fb1a26e4bc422aef54eb4",
+        "Timestamp": 987456354.24,
+    },
+    "EventBody": {
+        "Event": "onVideoReady",
+        "URI": "uri_string",
+    }
+}
+

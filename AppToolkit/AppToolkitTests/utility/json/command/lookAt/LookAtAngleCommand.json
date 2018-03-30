@@ -1,0 +1,9 @@
+{
+	"Type": "LookAt",
+	"LookAtTarget": {
+		"Angle": [1, 2]
+	},
+	"TrackFlag": true,
+	"LevelHeadFlag": true
+}
+

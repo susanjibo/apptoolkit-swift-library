@@ -1,0 +1,964 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "definitions": {
+    "AllCommands": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/SessionRequest"
+        },
+        {
+          "$ref": "#/definitions/GetConfigRequest"
+        },
+        {
+          "$ref": "#/definitions/CancelRequest"
+        },
+        {
+          "$ref": "#/definitions/AttentionRequest"
+        },
+        {
+          "$ref": "#/definitions/SayRequest"
+        },
+        {
+          "$ref": "#/definitions/ListenRequest"
+        },
+        {
+          "$ref": "#/definitions/LookAtRequest"
+        },
+        {
+          "$ref": "#/definitions/TakePhotoRequest"
+        },
+        {
+          "$ref": "#/definitions/VideoRequest"
+        },
+        {
+          "$ref": "#/definitions/EntityRequest"
+        },
+        {
+          "$ref": "#/definitions/SpeechRequest"
+        },
+        {
+          "$ref": "#/definitions/ScreenGestureRequest"
+        },
+        {
+          "$ref": "#/definitions/DisplayRequest"
+        },
+        {
+          "$ref": "#/definitions/MotionRequest"
+        },
+        {
+          "$ref": "#/definitions/SetConfigRequest"
+        },
+        {
+          "$ref": "#/definitions/HeadTouchRequest"
+        },
+        {
+          "$ref": "#/definitions/FetchAssetRequest"
+        }
+      ]
+    },
+    "AngleTarget": {
+      "additionalProperties": false,
+      "properties": {
+        "Angle": {
+          "$ref": "#/definitions/AngleVector"
+        }
+      },
+      "required": [
+        "Angle"
+      ],
+      "type": "object"
+    },
+    "AngleVector": {
+      "additionalItems": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ]
+      },
+      "description": "`[theta, psi]` where `theta` = twist/horizontal angle and `psi` = vertical angle.",
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "AttentionMode": {
+      "description": "Enum of Jibo's available attention modes.",
+      "enum": [
+        "OFF",
+        "IDLE",
+        "DISENGAGE",
+        "ENGAGED",
+        "SPEAKING",
+        "FIXATED",
+        "ATTRACTABLE",
+        "MENU",
+        "COMMAND"
+      ],
+      "type": "string"
+    },
+    "AttentionRequest": {
+      "additionalProperties": false,
+      "description": "Requestion for the attention command.",
+      "properties": {
+        "Mode": {
+          "$ref": "#/definitions/AttentionMode"
+        },
+        "Type": {
+          "enum": [
+            "SetAttention"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Mode",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "BaseCommand": {
+      "additionalProperties": false,
+      "description": "Interface for base commands.",
+      "properties": {
+        "Type": {
+          "$ref": "#/definitions/CommandTypes"
+        }
+      },
+      "required": [
+        "Type"
+      ],
+      "type": "object"
+    },
+    "BaseSubscribe": {
+      "additionalProperties": false,
+      "description": "Interface for the base Subscribe command.",
+      "properties": {
+        "StreamFilter": {
+        },
+        "StreamType": {
+          "$ref": "#/definitions/StreamTypes"
+        },
+        "Type": {
+          "enum": [
+            "Subscribe"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Type",
+        "StreamType",
+        "StreamFilter"
+      ],
+      "type": "object"
+    },
+    "Camera": {
+      "enum": [
+        "left",
+        "right"
+      ],
+      "type": "string"
+    },
+    "CameraResolution": {
+      "description": "Enum of camera resolutions",
+      "enum": [
+        "highRes",
+        "medRes",
+        "lowRes",
+        "microRes"
+      ],
+      "type": "string"
+    },
+    "CameraTarget": {
+      "additionalProperties": false,
+      "properties": {
+        "ScreenCoords": {
+          "$ref": "#/definitions/Vector2"
+        },
+        "ScreenSize": {
+          "$ref": "#/definitions/Vector2"
+        }
+      },
+      "required": [
+        "ScreenCoords"
+      ],
+      "type": "object"
+    },
+    "CancelRequest": {
+      "additionalProperties": false,
+      "description": "Request for the Cancel command.",
+      "properties": {
+        "ID": {
+          "$ref": "#/definitions/TransactionID"
+        },
+        "Type": {
+          "enum": [
+            "Cancel"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "ID",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "Circle": {
+      "additionalProperties": false,
+      "properties": {
+        "radius": {
+          "type": "number"
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "radius"
+      ],
+      "type": "object"
+    },
+    "CommandTypes": {
+      "description": "Enum of command types.",
+      "enum": [
+        "StartSession",
+        "GetConfig",
+        "SetConfig",
+        "Cancel",
+        "Display",
+        "SetAttention",
+        "Say",
+        "Listen",
+        "LookAt",
+        "TakePhoto",
+        "Video",
+        "Subscribe",
+        "FetchAsset"
+      ],
+      "type": "string"
+    },
+    "DisplayRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "Type": {
+          "enum": [
+            "Display"
+          ],
+          "type": "string"
+        },
+        "View": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/EyeView"
+            },
+            {
+              "$ref": "#/definitions/TextView"
+            },
+            {
+              "$ref": "#/definitions/ImageView"
+            }
+          ]
+        }
+      },
+      "required": [
+        "Type",
+        "View"
+      ],
+      "type": "object"
+    },
+    "DisplayView": {
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "description": "Name of view, should be unique",
+          "type": "string"
+        },
+        "Type": {
+          "$ref": "#/definitions/DisplayViewType",
+          "description": "Type of view"
+        }
+      },
+      "required": [
+        "Type",
+        "Name"
+      ],
+      "type": "object"
+    },
+    "DisplayViewType": {
+      "description": "Enum of available display types",
+      "enum": [
+        "Eye",
+        "Text",
+        "Image"
+      ],
+      "type": "string"
+    },
+    "EntityRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "StreamFilter": {
+        },
+        "StreamType": {
+          "enum": [
+            "Entity"
+          ],
+          "type": "string"
+        },
+        "Type": {
+          "enum": [
+            "Subscribe"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "StreamFilter",
+        "StreamType",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "EntityTarget": {
+      "additionalProperties": false,
+      "properties": {
+        "Entity": {
+          "$ref": "#/definitions/LookAtEntity",
+          "description": "An integer that refers to an entity that is known and available in Jibo’s LPS\nsystem. An error will be returned if that entity is no longer being tracked."
+        }
+      },
+      "required": [
+        "Entity"
+      ],
+      "type": "object"
+    },
+    "EyeView": {
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "description": "Name of view, should be unique",
+          "type": "string"
+        },
+        "Type": {
+          "enum": [
+            "Eye"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "FetchAssetRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "maxLength": 255,
+          "type": "string"
+        },
+        "Type": {
+          "enum": [
+            "FetchAsset"
+          ],
+          "type": "string"
+        },
+        "URI": {
+          "maxLength": 1200,
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Type",
+        "URI"
+      ],
+      "type": "object"
+    },
+    "GetConfigRequest": {
+      "additionalProperties": false,
+      "description": "Request for GetConfig command.",
+      "properties": {
+        "Type": {
+          "enum": [
+            "GetConfig"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Type"
+      ],
+      "type": "object"
+    },
+    "HeadTouchRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "StreamFilter": {
+        },
+        "StreamType": {
+          "enum": [
+            "HeadTouch"
+          ],
+          "type": "string"
+        },
+        "Type": {
+          "enum": [
+            "Subscribe"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "StreamFilter",
+        "StreamType",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "ImageData": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "set": {
+          "type": "string"
+        },
+        "src": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "src"
+      ],
+      "type": "object"
+    },
+    "ImageView": {
+      "additionalProperties": false,
+      "properties": {
+        "Image": {
+          "$ref": "#/definitions/ImageData"
+        },
+        "Name": {
+          "description": "Name of view, should be unique",
+          "type": "string"
+        },
+        "Type": {
+          "enum": [
+            "Image"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Image",
+        "Name",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "ListenRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "LanguageCode": {
+          "pattern": "^[a-z]{2}$|^[a-z]{2}-[A-Z]{2}$",
+          "type": "string"
+        },
+        "MaxNoSpeechTimeout": {
+          "maximum": 15000,
+          "type": "number"
+        },
+        "MaxSpeechTimeout": {
+          "maximum": 15000,
+          "type": "number"
+        },
+        "Type": {
+          "enum": [
+            "Listen"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Type"
+      ],
+      "type": "object"
+    },
+    "LookAtEntity": {
+      "description": "Integer representing the entity (face) to look at.",
+      "minimum": 1,
+      "type": "integer"
+    },
+    "LookAtRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "LevelHeadFlag": {
+          "type": "boolean"
+        },
+        "LookAtTarget": {
+          "$ref": "#/definitions/LookAtTarget"
+        },
+        "TrackFlag": {
+          "type": "boolean"
+        },
+        "Type": {
+          "enum": [
+            "LookAt"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "LookAtTarget",
+        "TrackFlag",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "LookAtTarget": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/PositionTarget"
+        },
+        {
+          "$ref": "#/definitions/AngleTarget"
+        },
+        {
+          "$ref": "#/definitions/EntityTarget"
+        },
+        {
+          "$ref": "#/definitions/CameraTarget"
+        }
+      ],
+      "description": "What type of target to look toward."
+    },
+    "MotionRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "StreamFilter": {
+        },
+        "StreamType": {
+          "enum": [
+            "Motion"
+          ],
+          "type": "string"
+        },
+        "Type": {
+          "enum": [
+            "Subscribe"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "StreamFilter",
+        "StreamType",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "PositionTarget": {
+      "additionalProperties": false,
+      "properties": {
+        "Position": {
+          "$ref": "#/definitions/Vector3"
+        }
+      },
+      "required": [
+        "Position"
+      ],
+      "type": "object"
+    },
+    "Rectangle": {
+      "additionalProperties": false,
+      "properties": {
+        "height": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number"
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "width",
+        "height"
+      ],
+      "type": "object"
+    },
+    "RequestHeader": {
+      "additionalProperties": false,
+      "properties": {
+        "AppID": {
+          "type": "string"
+        },
+        "Credentials": {
+        },
+        "SessionID": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "TransactionID": {
+          "$ref": "#/definitions/TransactionID"
+        },
+        "Version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "AppID",
+        "SessionID",
+        "Credentials",
+        "Version",
+        "TransactionID"
+      ],
+      "type": "object"
+    },
+    "SayRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "ESML": {
+          "maxLength": 1200,
+          "type": "string"
+        },
+        "Type": {
+          "enum": [
+            "Say"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "ESML",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "ScreenGestureFilter": {
+      "additionalProperties": false,
+      "properties": {
+        "Area": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/Rectangle"
+            },
+            {
+              "$ref": "#/definitions/Circle"
+            }
+          ]
+        },
+        "Type": {
+          "$ref": "#/definitions/ScreenGestureType"
+        }
+      },
+      "type": "object"
+    },
+    "ScreenGestureRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "StreamFilter": {
+          "$ref": "#/definitions/ScreenGestureFilter"
+        },
+        "StreamType": {
+          "enum": [
+            "ScreenGesture"
+          ],
+          "type": "string"
+        },
+        "Type": {
+          "enum": [
+            "Subscribe"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "StreamFilter",
+        "StreamType",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "ScreenGestureType": {
+      "description": "Enum of available gesture types.",
+      "enum": [
+        "Tap",
+        "SwipeDown",
+        "SwipeUp",
+        "SwipeRight",
+        "SwipeLeft"
+      ],
+      "type": "string"
+    },
+    "SessionRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "Type": {
+          "enum": [
+            "StartSession"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Type"
+      ],
+      "type": "object"
+    },
+    "SetConfigOptions": {
+      "additionalProperties": false,
+      "description": "Battery information.",
+      "properties": {
+        "Mixer": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "Mixer"
+      ],
+      "type": "object"
+    },
+    "SetConfigRequest": {
+      "additionalProperties": false,
+      "description": "Request for [SetConfig]{@link Requester.config#set} command.",
+      "properties": {
+        "Options": {
+          "$ref": "#/definitions/SetConfigOptions"
+        },
+        "Type": {
+          "enum": [
+            "SetConfig"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Options",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "SpeechRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "Listen": {
+          "type": "boolean"
+        },
+        "StreamFilter": {
+        },
+        "StreamType": {
+          "enum": [
+            "Speech"
+          ],
+          "type": "string"
+        },
+        "Type": {
+          "enum": [
+            "Subscribe"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Listen",
+        "StreamFilter",
+        "StreamType",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "StreamTypes": {
+      "description": "Enum of stream types.",
+      "enum": [
+        "Entity",
+        "Speech",
+        "HeadTouch",
+        "Motion",
+        "ScreenGesture"
+      ],
+      "type": "string"
+    },
+    "TakePhotoRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "Camera": {
+          "$ref": "#/definitions/Camera"
+        },
+        "Distortion": {
+          "type": "boolean"
+        },
+        "Resolution": {
+          "$ref": "#/definitions/CameraResolution"
+        },
+        "Type": {
+          "enum": [
+            "TakePhoto"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Camera",
+        "Resolution",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "TextView": {
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "description": "Name of view, should be unique",
+          "type": "string"
+        },
+        "Text": {
+          "type": "string"
+        },
+        "Type": {
+          "enum": [
+            "Text"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "Name",
+        "Text",
+        "Type"
+      ],
+      "type": "object"
+    },
+    "TransactionID": {
+      "description": "128bit hexidecimal number that must be unique every transaction issued by the particular ROM\nServer.  The Command Library supplied by Jibo does a 128 bit hash on the Server IP address and\nthe current time.  Because this is a hash this ID cannot be treated as a sequence number for\nCommand serialization.",
+      "maxLength": 32,
+      "minLength": 32,
+      "type": "string"
+    },
+    "Vector2": {
+      "additionalItems": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ]
+      },
+      "description": "`[x, y]`",
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "Vector3": {
+      "additionalItems": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ]
+      },
+      "description": "`[x, y, z]`",
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "VideoRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "Duration": {
+          "type": "integer"
+        },
+        "Type": {
+          "enum": [
+            "Video"
+          ],
+          "type": "string"
+        },
+        "VideoType": {
+          "$ref": "#/definitions/VideoType"
+        }
+      },
+      "required": [
+        "Type"
+      ],
+      "type": "object"
+    },
+    "VideoType": {
+      "description": "Enum of video types",
+      "enum": [
+        "NORMAL",
+        "DEBUG"
+      ],
+      "type": "string"
+    }
+  },
+  "properties": {
+    "ClientHeader": {
+      "$ref": "#/definitions/RequestHeader"
+    },
+    "Command": {
+      "$ref": "#/definitions/AllCommands"
+    }
+  },
+  "required": [
+    "ClientHeader",
+    "Command"
+  ],
+  "type": "object"
+}

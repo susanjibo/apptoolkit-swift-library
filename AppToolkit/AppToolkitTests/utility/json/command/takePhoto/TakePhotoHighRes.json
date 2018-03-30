@@ -1,0 +1,6 @@
+{
+	"Type": "TakePhoto",
+	"Resolution": "highRes",
+	"Camera": "right",
+	"Distortion": false
+}

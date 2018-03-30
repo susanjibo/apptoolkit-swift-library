@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CommandLibraryInterface Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/CommandLibraryInterface" class="dashAnchor"></a>
+    <a title="CommandLibraryInterface Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">AppToolkit Docs</a></p>
+        <p class="header-right"><a href="https://github.com/jiborobot/apptoolkit-swift-library"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">AppToolkit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CommandLibraryInterface Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Battery.html">Battery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CallbackInfo.html">CallbackInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigInfo.html">ConfigInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DisplayInfo.html">DisplayInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ErrorResponse.html">ErrorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FetchAssetInfo.html">FetchAssetInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GetConfigInfo.html">GetConfigInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HeadTouchInfo.html">HeadTouchInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HeadTouchInfo/HeadSensors.html">– HeadSensors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListenInfo.html">ListenInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListenInfo/ListenType.html">– ListenType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LookAtAchievedInfo.html">LookAtAchievedInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Mixers.html">Mixers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ModelObject.html">ModelObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MotionInfo.html">MotionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Position.html">Position</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SayCompletedInfo.html">SayCompletedInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenGestureInfo.html">ScreenGestureInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenGestureInfo/ScreenGestureType.html">– ScreenGestureType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SetConfigInfo.html">SetConfigInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SetConfigOptions.html">SetConfigOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TakePhotoInfo.html">TakePhotoInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TrackedEntityInfo.html">TrackedEntityInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WiFi.html">WiFi</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ApiError.html">ApiError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Camera.html">Camera</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CameraResolution.html">CameraResolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommandError.html">CommandError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DisplayViewState.html">DisplayViewState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EntityType.html">EntityType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventMessageError.html">EventMessageError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventType.html">EventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LookAtTargetType.html">LookAtTargetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RobotDisconnectCode.html">RobotDisconnectCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ScreenGestureSwipeDirection.html">ScreenGestureSwipeDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ScreenGestureType.html">ScreenGestureType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VideoType.html">VideoType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10AppToolkit4AreaP">Area</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BatteryProtocol.html">BatteryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CommandLibraryInterface.html">CommandLibraryInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ConfigInfoProtocol.html">ConfigInfoProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListenEntityProtocol.html">ListenEntityProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MixersProtocol.html">MixersProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MotionEntityProtocol.html">MotionEntityProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PositionProtocol.html">PositionProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RobotInfoProtocol.html">RobotInfoProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenGestureEntityProtocol.html">ScreenGestureEntityProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SetConfigOptionsProtocol.html">SetConfigOptionsProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TrackedEntityProtocol.html">TrackedEntityProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WiFiProtocol.html">WiFiProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AngleVector.html">AngleVector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:10AppToolkit6CircleV">Circle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ImageData.html">ImageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LPSPosition.html">LPSPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:10AppToolkit9RectangleV">Rectangle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:10AppToolkit5RobotV">Robot</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ScreenGestureListenParams.html">ScreenGestureListenParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ScreenRectangle.html">ScreenRectangle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Speaker.html">Speaker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpeakerId.html">SpeakerId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpeechInfo.html">SpeechInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Vector2.html">Vector2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Vector3.html">Vector3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10AppToolkit12LookAtEntitya">LookAtEntity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CommandLibraryInterface</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CommandLibraryInterface</span></code></pre>
+
+                </div>
+              </div>
+            <p>Main library for the Jibo Protocol</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Handler"></a>
+                <a name="//apple_ref/swift/Section/Handler" class="dashAnchor"></a>
+                <a href="#/Handler">
+                  <h3 class="section-name">Handler</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP17CompletionHandlera"></a>
+                    <a name="//apple_ref/swift/Alias/CompletionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP17CompletionHandlera">CompletionHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Completion handler</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">CompletionHandler</span> <span class="o">=</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Connectivity"></a>
+                <a name="//apple_ref/swift/Section/Connectivity" class="dashAnchor"></a>
+                <a href="#/Connectivity">
+                  <h3 class="section-name">Connectivity</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP15isAuthenticatedSbv"></a>
+                    <a name="//apple_ref/swift/Property/isAuthenticated" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP15isAuthenticatedSbv">isAuthenticated</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if the robot has been successfully authenticated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isAuthenticated</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP12authenticateyySb_s5Error_pSgtc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/authenticate(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP12authenticateyySb_s5Error_pSgtc10completion_tF">authenticate(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Authenticate with Jibo cloud. This function will prompt users to 
+sign into their Jibo account with their email and password. Once they have 
+authenticated their account, they will be able to connect their robot to your app.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">authenticate</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfaceP17CompletionHandlera">CompletionHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP10invalidateyySb_s5Error_pSgtc10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/invalidate(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP10invalidateyySb_s5Error_pSgtc10completion_tF">invalidate(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove authentication for the account. Users will have to authenticate again
+to connect to your app.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">invalidate</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfaceP17CompletionHandlera">CompletionHandler</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP13getRobotsListyySayAA17RobotInfoProtocol_pGSg_AA13ErrorResponseCSgtcSg10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/getRobotsList(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP13getRobotsListyySayAA17RobotInfoProtocol_pGSg_AA13ErrorResponseCSgtcSg10completion_tF">getRobotsList(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get a list of all robots associated with the user&rsquo;s authenticated account. 
+It is suggested that you prompt users to select which robot they would 
+like to connect to use your app in the event that they own multiple robots.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getRobotsList</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE16RobotListClosurea">RobotListClosure</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP12getIpAddressyAA17RobotInfoProtocol_p5robot_yAA0I0VSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/getIpAddress(robot:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP12getIpAddressyAA17RobotInfoProtocol_p5robot_yAA0I0VSg_AA13ErrorResponseCSgtcSg10completiontF">getIpAddress(robot:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getIpAddress</span><span class="p">(</span><span class="nv">robot</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RobotInfoProtocol.html">RobotInfoProtocol</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE12RobotClosurea">RobotClosure</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP7connectyAA5RobotV5robot_ySb_s5Error_pSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/connect(robot:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP7connectyAA5RobotV5robot_ySb_s5Error_pSgtcSg10completiontF">connect(robot:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connect to a robot. Can only be called for robots where <code>isAuthenticated = true</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="nv">robot</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:10AppToolkit5RobotV">Robot</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfaceP17CompletionHandlera">CompletionHandler</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP10disconnectyySb_s5Error_pSgtcSg10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/disconnect(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP10disconnectyySb_s5Error_pSgtcSg10completion_tF">disconnect(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disconnect from the currently connected robot.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">disconnect</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfaceP17CompletionHandlera">CompletionHandler</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Commands"></a>
+                <a name="//apple_ref/swift/Section/Commands" class="dashAnchor"></a>
+                <a href="#/Commands">
+                  <h3 class="section-name">Commands</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP16getConfigurationSSSgyAA13GetConfigInfoCSg_AA13ErrorResponseCSgtcSg10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/getConfiguration(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP16getConfigurationSSSgyAA13GetConfigInfoCSg_AA13ErrorResponseCSgtcSg10completion_tF">getConfiguration(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get robot configuration data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getConfiguration</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE16GetConfigClosurea">GetConfigClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP16setConfigurationSSSgAA24SetConfigOptionsProtocol_p_yAA0hI4InfoCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/setConfiguration(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP16setConfigurationSSSgAA24SetConfigOptionsProtocol_p_yAA0hI4InfoCSg_AA13ErrorResponseCSgtcSg10completiontF">setConfiguration(_:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set robot configuration data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setConfiguration</span><span class="p">(</span><span class="n">_</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SetConfigOptionsProtocol.html">SetConfigOptionsProtocol</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE16SetConfigClosurea">SetConfigClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/SetConfigOptionsProtocol.html">SetConfigOptionsProtocol</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE16SetConfigClosurea">SetConfigClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP3saySSSgSS6phrase_yAA16SayCompletedInfoCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/say(phrase:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP3saySSSgSS6phrase_yAA16SayCompletedInfoCSg_AA13ErrorResponseCSgtcSg10completiontF">say(phrase:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Make Jibo speak.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">say</span><span class="p">(</span><span class="nv">phrase</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE10SayClosurea">SayClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>phrase</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>What Jibo should say. Can take plain text or <a href="https://app-toolkit.jibo.com/esml.html#esml">ESML</a>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE10SayClosurea">SayClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP6cancelySS13transactionId_ySb_s5Error_pSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/cancel(transactionId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP6cancelySS13transactionId_ySb_s5Error_pSgtcSg10completiontF">cancel(transactionId:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cancel a transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cancel</span><span class="p">(</span><span class="nv">transactionId</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfaceP17CompletionHandlera">CompletionHandler</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transactionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the transaction to cancel.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfaceP17CompletionHandlera">CompletionHandler</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP6lookAtSSSgAA04LookG10TargetTypeO06targetJ0_Sb9trackFlagSb09levelHeadM0yAA0hG12AchievedInfoCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/lookAt(targetType:trackFlag:levelHeadFlag:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP6lookAtSSSgAA04LookG10TargetTypeO06targetJ0_Sb9trackFlagSb09levelHeadM0yAA0hG12AchievedInfoCSg_AA13ErrorResponseCSgtcSg10completiontF">lookAt(targetType:trackFlag:levelHeadFlag:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Make Jibo look toward a specific spot.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lookAt</span><span class="p">(</span><span class="nv">targetType</span><span class="p">:</span> <span class="kt"><a href="../Enums/LookAtTargetType.html">LookAtTargetType</a></span><span class="p">,</span> <span class="nv">trackFlag</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">levelHeadFlag</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE13LookAtClosurea">LookAtClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>targetType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Where to make Jibo look. See <code><a href="../Enums/LookAtTargetType.html">LookAtTargetType</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>trackFlag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unsupported. Use <code>false</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>levelHeadFlag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>true</code> to keep Jibo&rsquo;s head level while he moves.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE13LookAtClosurea">LookAtClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP9takeVideoSSSgAA0G4TypeO05videoH0_Sd8durationySo7UIImageCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/takeVideo(videoType:duration:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP9takeVideoSSSgAA0G4TypeO05videoH0_Sd8durationySo7UIImageCSg_AA13ErrorResponseCSgtcSg10completiontF">takeVideo(videoType:duration:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get a stream of what Jibo&rsquo;s cameras see.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">takeVideo</span><span class="p">(</span><span class="nv">videoType</span><span class="p">:</span> <span class="kt"><a href="../Enums/VideoType.html">VideoType</a></span><span class="p">,</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE16TakeVideoClosurea">TakeVideoClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Use <code>normal</code>. <code>debug</code> not currently supported.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>duration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unsupported. Call <code>cancel()</code> to stop the stream.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE16TakeVideoClosurea">TakeVideoClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP9takePhotoSSSgAA6CameraO6camera_AA0H10ResolutionO10resolutionSb10distortionyAA04TakeG4InfoCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/takePhoto(camera:resolution:distortion:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP9takePhotoSSSgAA6CameraO6camera_AA0H10ResolutionO10resolutionSb10distortionyAA04TakeG4InfoCSg_AA13ErrorResponseCSgtcSg10completiontF">takePhoto(camera:resolution:distortion:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Take a photo.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">takePhoto</span><span class="p">(</span><span class="nv">camera</span><span class="p">:</span> <span class="kt"><a href="../Enums/Camera.html">Camera</a></span><span class="p">,</span> <span class="nv">resolution</span><span class="p">:</span> <span class="kt"><a href="../Enums/CameraResolution.html">CameraResolution</a></span><span class="p">,</span> <span class="nv">distortion</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE16TakePhotoClosurea">TakePhotoClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>camera</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>left</code> or <code>right</code> camera to take photo with. Only <code>left</code> is supported at this time.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resolution</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Choose a <code><a href="../Enums/CameraResolution.html">CameraResolution</a></code>. Default = <code>low</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>distortion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>true</code> for regular lense. <code>false</code> for fisheye lense.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE16TakePhotoClosurea">TakePhotoClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP13getFaceEntitySSSgyAA07TrackedH4InfoCSg_AA13ErrorResponseCSgtcSg10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/getFaceEntity(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP13getFaceEntitySSSgyAA07TrackedH4InfoCSg_AA13ErrorResponseCSgtcSg10completion_tF">getFaceEntity(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get a face to track. Currently unsupported.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getFaceEntity</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE20TrackedEntityClosurea">TrackedEntityClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP10displayEyeSSSgSS2in_yAA11DisplayInfoCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/displayEye(in:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP10displayEyeSSSgSS2in_yAA11DisplayInfoCSg_AA13ErrorResponseCSgtcSg10completiontF">displayEye(in:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display Jibo&rsquo;s eye on screen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">displayEye</span><span class="p">(</span><span class="k">in</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE14DisplayClosurea">DisplayClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unique name of view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE14DisplayClosurea">DisplayClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP11displayTextSSSgSS_SS2inyAA11DisplayInfoCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/displayText(_:in:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP11displayTextSSSgSS_SS2inyAA11DisplayInfoCSg_AA13ErrorResponseCSgtcSg10completiontF">displayText(_:in:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display text on screen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">displayText</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">in</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE14DisplayClosurea">DisplayClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>text to display.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unique name of view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE14DisplayClosurea">DisplayClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP12displayImageSSSgAA0G4DataV_SS2inyAA11DisplayInfoCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/displayImage(_:in:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP12displayImageSSSgAA0G4DataV_SS2inyAA11DisplayInfoCSg_AA13ErrorResponseCSgtcSg10completiontF">displayImage(_:in:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display an image on screen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">displayImage</span><span class="p">(</span><span class="n">_</span> <span class="nv">image</span><span class="p">:</span> <span class="kt"><a href="../Structs/ImageData.html">ImageData</a></span><span class="p">,</span> <span class="k">in</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE14DisplayClosurea">DisplayClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Info for the image to display</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unique name of view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE14DisplayClosurea">DisplayClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP9getMotionSSSgyAA0G4InfoCSg_AA13ErrorResponseCSgtcSg10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/getMotion(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP9getMotionSSSgyAA0G4InfoCSg_AA13ErrorResponseCSgtcSg10completion_tF">getMotion(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Track motion in Jibo&rsquo;s perceptual space.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getMotion</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE13MotionClosurea">MotionClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP15listenForSpeechSSSgSu03maxH7TimeOut_Su0i2NoH7TimeoutAA8LangCodeO08languageO0yAA10ListenInfoCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/listenForSpeech(maxSpeechTimeOut:maxNoSpeechTimeout:languageCode:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP15listenForSpeechSSSgSu03maxH7TimeOut_Su0i2NoH7TimeoutAA8LangCodeO08languageO0yAA10ListenInfoCSg_AA13ErrorResponseCSgtcSg10completiontF">listenForSpeech(maxSpeechTimeOut:maxNoSpeechTimeout:languageCode:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listen for speech input.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">listenForSpeech</span><span class="p">(</span><span class="nv">maxSpeechTimeOut</span><span class="p">:</span> <span class="kt">Timeout</span><span class="p">,</span> <span class="nv">maxNoSpeechTimeout</span><span class="p">:</span> <span class="kt">Timeout</span><span class="p">,</span> <span class="nv">languageCode</span><span class="p">:</span> <span class="kt">LangCode</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE13ListenClosurea">ListenClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxSpeechTimeOut</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>[default = 15] In seconds</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxNoSpeechTimeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>[default = 15] In seconds</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>languageCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>[default = <code>en_US</code>] Language code. Only English is supported.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE13ListenClosurea">ListenClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP18listenForHeadTouchSSSgyAA0hI4InfoCSg_AA13ErrorResponseCSgtcSg10completion_tF"></a>
+                    <a name="//apple_ref/swift/Method/listenForHeadTouch(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP18listenForHeadTouchSSSgyAA0hI4InfoCSg_AA13ErrorResponseCSgtcSg10completion_tF">listenForHeadTouch(completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listen for head touch.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">listenForHeadTouch</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE16HeadTouchClosurea">HeadTouchClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP17fetchAssetWithURISSSgSS_SS4nameyAA05FetchG4InfoCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/fetchAssetWithURI(_:name:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP17fetchAssetWithURISSSgSS_SS4nameyAA05FetchG4InfoCSg_AA13ErrorResponseCSgtcSg10completiontF">fetchAssetWithURI(_:name:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve external asset and store in local cache by name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchAssetWithURI</span><span class="p">(</span><span class="n">_</span> <span class="nv">uri</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE17FetchAssetClosurea">FetchAssetClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uri</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URI to the asset to be fetched.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name the asset will be called by.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE17FetchAssetClosurea">FetchAssetClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP22listenForScreenGestureSSSgAA0hI12ListenParamsV_yAA0hI4InfoCSg_AA13ErrorResponseCSgtcSg10completiontF"></a>
+                    <a name="//apple_ref/swift/Method/listenForScreenGesture(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP22listenForScreenGestureSSSgAA0hI12ListenParamsV_yAA0hI4InfoCSg_AA13ErrorResponseCSgtcSg10completiontF">listenForScreenGesture(_:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listen for screen gesture.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">listenForScreenGesture</span><span class="p">(</span><span class="n">_</span> <span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Structs/ScreenGestureListenParams.html">ScreenGestureListenParams</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE20ScreenGestureClosurea">ScreenGestureClosure</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Typealiases.html#/s:10AppToolkit13TransactionIDa">TransactionID</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>params</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Structs/ScreenGestureListenParams.html">ScreenGestureListenParams</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/CommandLibraryInterface.html#/s:10AppToolkit23CommandLibraryInterfacePAAE20ScreenGestureClosurea">ScreenGestureClosure</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfaceP12useSimulatorSbvZ"></a>
+                    <a name="//apple_ref/swift/Variable/useSimulator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfaceP12useSimulatorSbvZ">useSimulator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Turn on Jibo Simulator flow. Default value is <code>false</code>.</p>
+
+<p>Use <code>CommandLibrary.useSimulator = false</code> in <code>viewDidLoad()</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">useSimulator</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Closures"></a>
+                <a name="//apple_ref/swift/Section/Closures" class="dashAnchor"></a>
+                <a href="#/Closures">
+                  <h3 class="section-name">Closures</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE15CallbackClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/CallbackClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE15CallbackClosurea">CallbackClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generic closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">CallbackClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt">Any</span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE13LookAtClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/LookAtClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE13LookAtClosurea">LookAtClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Look At closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">LookAtClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/LookAtAchievedInfo.html">LookAtAchievedInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE10SayClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/SayClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE10SayClosurea">SayClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Say closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">SayClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/SayCompletedInfo.html">SayCompletedInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE16TakePhotoClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/TakePhotoClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE16TakePhotoClosurea">TakePhotoClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Take Photo closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">TakePhotoClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/TakePhotoInfo.html">TakePhotoInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE12RobotClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/RobotClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE12RobotClosurea">RobotClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Robot closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">RobotClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Structs.html#/s:10AppToolkit5RobotV">Robot</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE16TakeVideoClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/TakeVideoClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE16TakeVideoClosurea">TakeVideoClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Take Video closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">TakeVideoClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt">UIImage</span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE16GetConfigClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/GetConfigClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE16GetConfigClosurea">GetConfigClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get Config closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">GetConfigClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/GetConfigInfo.html">GetConfigInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE16SetConfigClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/SetConfigClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE16SetConfigClosurea">SetConfigClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set Config closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">SetConfigClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/SetConfigInfo.html">SetConfigInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE16RobotListClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/RobotListClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE16RobotListClosurea">RobotListClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Robot List closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">RobotListClosure</span> <span class="o">=</span> <span class="p">(([</span><span class="kt"><a href="../Protocols/RobotInfoProtocol.html">RobotInfoProtocol</a></span><span class="p">]?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE14DisplayClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/DisplayClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE14DisplayClosurea">DisplayClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">DisplayClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/DisplayInfo.html">DisplayInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE13MotionClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/MotionClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE13MotionClosurea">MotionClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Motion closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">MotionClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/MotionInfo.html">MotionInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE13ListenClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/ListenClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE13ListenClosurea">ListenClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listen closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">ListenClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/ListenInfo.html">ListenInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE16HeadTouchClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/HeadTouchClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE16HeadTouchClosurea">HeadTouchClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>HeadTouch closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">HeadTouchClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/HeadTouchInfo.html">HeadTouchInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE17FetchAssetClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/FetchAssetClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE17FetchAssetClosurea">FetchAssetClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>FetchAsset closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">FetchAssetClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/FetchAssetInfo.html">FetchAssetInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE20ScreenGestureClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/ScreenGestureClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE20ScreenGestureClosurea">ScreenGestureClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>ScreenGesture closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">ScreenGestureClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/ScreenGestureInfo.html">ScreenGestureInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10AppToolkit23CommandLibraryInterfacePAAE20TrackedEntityClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/TrackedEntityClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10AppToolkit23CommandLibraryInterfacePAAE20TrackedEntityClosurea">TrackedEntityClosure</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>TrackEntity closure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">TrackedEntityClosure</span> <span class="o">=</span> <span class="p">((</span><span class="kt"><a href="../Classes/TrackedEntityInfo.html">TrackedEntityInfo</a></span><span class="p">?,</span> <span class="kt"><a href="../Classes/ErrorResponse.html">ErrorResponse</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2018 Jibo, Inc.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,11 @@
+framework module AppToolkit {
+  umbrella header "AppToolkit.h"
+
+  export *
+  module * { export * }
+}
+
+module AppToolkit.Swift {
+    header "AppToolkit-Swift.h"
+    requires objc
+}

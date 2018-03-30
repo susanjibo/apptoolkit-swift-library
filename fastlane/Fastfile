@@ -1,0 +1,90 @@
+# Customize this file, documentation can be found here:
+# https://docs.fastlane.tools/actions/
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+min_fastlane_version("2.75.1")
+
+default_platform(:ios)
+
+platform :ios do
+
+  ######### Constants #########
+  buildFolder = "build"
+  version = "0.0.1"
+  $workspace = "./AppToolkit.xcworkspace"
+  $sdkProject = "./AppToolkit.xcodeproj"
+  $sdkScheme = "AppToolkit"
+  $buildArtifacts = ["#{buildFolder}/Release-universal/AppToolkit.framework"]
+  $documentationArtifacts = ["#{buildFolder}/documentation"]
+
+  before_all do
+    FileUtils::rm_rf "../#{buildFolder}"
+  end
+
+  after_all do |lane|
+    UI.success "Fastlane finished '#{lane}' successfully"
+  end
+
+  error do |lane, exception|
+    UI.error("Fastlane '#{lane}' errored")
+  end
+
+  ######### Public lanes #########
+  desc "Deploys SDK as a framework"
+  lane :deploySDK do
+    produce_sdk_binary()
+    produce_sdk_documentation()
+    deploy_dmg()
+  end
+  
+  desc "Deploys SDK documentation"
+  lane :deployDoc do
+    produce_sdk_documentation()
+  end
+
+  ######### Private lanes and functions #########
+	desc "Make a new build"
+	private_lane :produce_sdk_binary do |options|
+    Dir.chdir("..") do
+      Actions.sh("fastlane/scripts/build-universal-framework.sh")
+    end
+	end
+
+  desc "Make documentation"
+  private_lane :produce_sdk_documentation do |options|
+    jazzy
+  end
+
+  desc "Deploy DMG"
+  private_lane :deploy_dmg do |options|
+    $toolkitPath = "#{buildFolder}/AppToolkit-#{version}"
+    $toolkitFrameforksPath = "#{buildFolder}/AppToolkit-#{version}/Frameworks"
+    copy_artifacts(
+                   target_path: $toolkitFrameforksPath,
+                   artifacts: $buildArtifacts,
+                   fail_on_missing: true
+                   )
+    copy_artifacts(
+                   target_path: $toolkitPath,
+                   artifacts: $documentationArtifacts,
+                   fail_on_missing: true
+                   )
+
+    dmg(path: $toolkitPath, output_path: "#{buildFolder}/AppToolkit-#{version}.dmg")
+  end
+
+end
+# More information about multiple platforms in fastlane: https://docs.fastlane.tools/advanced/#control-configuration-by-lane-and-by-platform
+# All available actions: https://docs.fastlane.tools/actions
+
+# fastlane reports which actions are used. No personal data is recorded.
+# Learn more at https://docs.fastlane.tools/#metrics

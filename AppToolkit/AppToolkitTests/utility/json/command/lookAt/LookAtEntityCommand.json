@@ -1,0 +1,9 @@
+{
+	"Type": "LookAt",
+	"LookAtTarget": {
+		"Entity": 1,
+	},
+	"TrackFlag": true,
+	"LevelHeadFlag": true
+}
+

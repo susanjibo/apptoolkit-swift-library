@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Commands</key>
+	<array>
+		<dict>
+			<key>raw</key>
+			<string>getConfig</string>
+			<key>title</key>
+			<string>Get Config</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>setConfig</string>
+			<key>title</key>
+			<string>Set Config</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>cancel</string>
+			<key>title</key>
+			<string>Cancel</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>say</string>
+			<key>title</key>
+			<string>Say</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>listen</string>
+			<key>title</key>
+			<string>Listen</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>lookAt</string>
+			<key>title</key>
+			<string>Look At</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>video</string>
+			<key>title</key>
+			<string>Take Video</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>photo</string>
+			<key>title</key>
+			<string>Take Photo</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>faceEntity</string>
+			<key>title</key>
+			<string>Get Face Entity</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>display</string>
+			<key>title</key>
+			<string>Display</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>motion</string>
+			<key>title</key>
+			<string>Motion</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>headTouch</string>
+			<key>title</key>
+			<string>Head Touch</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>fetchAsset</string>
+			<key>title</key>
+			<string>Fetch Asset</string>
+		</dict>
+		<dict>
+			<key>raw</key>
+			<string>screenGesture</string>
+			<key>title</key>
+			<string>Screen Gesture</string>
+		</dict>
+	</array>
+</dict>
+</plist>

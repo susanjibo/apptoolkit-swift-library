@@ -1,0 +1,411 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 41,
+      "symbol": "LookAtAchievedInfo.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 49,
+      "symbol": "GetConfigInfo.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 52,
+      "symbol": "GetConfigInfo.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 55,
+      "symbol": "GetConfigInfo.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 68,
+      "symbol": "SetConfigInfo.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 72,
+      "symbol": "SetConfigInfo.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 75,
+      "symbol": "SetConfigInfo.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 118,
+      "symbol": "MotionInfo.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 121,
+      "symbol": "MotionInfo.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 126,
+      "symbol": "MotionInfo.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 139,
+      "symbol": "ListenInfo.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 142,
+      "symbol": "ListenInfo.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 146,
+      "symbol": "ListenInfo.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 179,
+      "symbol": "HeadTouchInfo.HeadSensors.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 188,
+      "symbol": "HeadTouchInfo.HeadSensors.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 227,
+      "symbol": "HeadTouchInfo.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 230,
+      "symbol": "HeadTouchInfo.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 235,
+      "symbol": "HeadTouchInfo.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 264,
+      "symbol": "ScreenGestureInfo.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 267,
+      "symbol": "ScreenGestureInfo.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 271,
+      "symbol": "ScreenGestureInfo.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 293,
+      "symbol": "TrackedEntityInfo.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 296,
+      "symbol": "TrackedEntityInfo.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 314,
+      "symbol": "TrackedEntityInfo.init(type:tracks:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 330,
+      "symbol": "SpeechInfo.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 333,
+      "symbol": "SpeechInfo.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 339,
+      "symbol": "SpeechInfo.init(speech:languageCode:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 356,
+      "symbol": "LPSPosition.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 359,
+      "symbol": "LPSPosition.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 366,
+      "symbol": "LPSPosition.init(position:angleVector:confidence:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 386,
+      "symbol": "SpeakerId.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 389,
+      "symbol": "SpeakerId.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 395,
+      "symbol": "SpeakerId.init(type:confidence:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 412,
+      "symbol": "Speaker.init(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 415,
+      "symbol": "Speaker.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/core/Callbacks.swift",
+      "line": 421,
+      "symbol": "Speaker.init(lpsPosition:speakerID:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/MathModels.swift",
+      "line": 106,
+      "symbol": "AngleVector.psi",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Commands/ScreenGestureCommand.swift",
+      "line": 14,
+      "symbol": "ScreenGestureType.tap",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Commands/ScreenGestureCommand.swift",
+      "line": 15,
+      "symbol": "ScreenGestureType.swipeDown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Commands/ScreenGestureCommand.swift",
+      "line": 16,
+      "symbol": "ScreenGestureType.swipeUp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Commands/ScreenGestureCommand.swift",
+      "line": 17,
+      "symbol": "ScreenGestureType.swipeRight",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Commands/ScreenGestureCommand.swift",
+      "line": 18,
+      "symbol": "ScreenGestureType.swipeLeft",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Commands/ScreenGestureCommand.swift",
+      "line": 23,
+      "symbol": "ScreenGestureSwipeDirection.up",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Commands/ScreenGestureCommand.swift",
+      "line": 24,
+      "symbol": "ScreenGestureSwipeDirection.down",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Commands/ScreenGestureCommand.swift",
+      "line": 25,
+      "symbol": "ScreenGestureSwipeDirection.right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Commands/ScreenGestureCommand.swift",
+      "line": 26,
+      "symbol": "ScreenGestureSwipeDirection.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Config.swift",
+      "line": 36,
+      "symbol": "Battery.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Config.swift",
+      "line": 61,
+      "symbol": "WiFi.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Config.swift",
+      "line": 85,
+      "symbol": "Mixers.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Config.swift",
+      "line": 108,
+      "symbol": "Position.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Config.swift",
+      "line": 128,
+      "symbol": "SetConfigOptions.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/request/Config.swift",
+      "line": 156,
+      "symbol": "ConfigInfo.mapping(map:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/response/events/ListenEvent.swift",
+      "line": 20,
+      "symbol": "ListenEntityProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/response/events/ListenEvent.swift",
+      "line": 23,
+      "symbol": "ListenEntityProtocol.languageCode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/response/events/ScreenGestureEvent.swift",
+      "line": 11,
+      "symbol": "ScreenGestureEntityProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/response/events/ScreenGestureEvent.swift",
+      "line": 17,
+      "symbol": "ScreenGestureEntityProtocol.velocity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/model/response/events/base/EventType.swift",
+      "line": 14,
+      "symbol": "EventType.undefined",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/calvinator/Documents/git/apptoolkit-swift-library/AppToolkit/AppToolkit/sources/public/CommandLibrary.swift",
+      "line": 96,
+      "symbol": "CommandLibraryInterface.getIpAddress(robot:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/calvinator/Documents/git/apptoolkit-swift-library"
+}
