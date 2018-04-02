@@ -15,14 +15,14 @@ class ConnectViewController: UIViewController {
 	
 	@IBOutlet weak var infoLabel: UILabel!
 	@IBOutlet weak var connectButton: UIButton!
-    @IBOutlet weak var connectToLocalhostButton: UIButton!
-    @IBOutlet weak var authButton: UIButton!
-    @IBOutlet weak var tableView: UITableView!
+    	@IBOutlet weak var connectToLocalhostButton: UIButton!
+   	@IBOutlet weak var authButton: UIButton!
+    	@IBOutlet weak var tableView: UITableView!
 
 	fileprivate lazy var remote: CommandLibrary = CommandExecutor.shared.remote
-    fileprivate var isConnected: Bool = false
-    fileprivate var robotList: [RobotInfoProtocol]?
-    fileprivate var robot: Robot?
+    	fileprivate var isConnected: Bool = false
+    	fileprivate var robotList: [RobotInfoProtocol]?
+    	fileprivate var robot: Robot?
     
 }
 
@@ -33,8 +33,6 @@ extension ConnectViewController {
         super.viewDidLoad()
         setupTableView()
         setupModule()
-        CommandLibrary.environment = .staging
-        CommandLibrary.useSimulator = false
         setupDebugGesture()
         getRobots()
     }
