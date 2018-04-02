@@ -67,16 +67,16 @@ class DisplayViewController: UIViewController, CommandConfigurable, ConsoleLogga
             self.log("Start executing Display Text")
             self.activeTransactionId = self.commandExecutor.executeDisplayText("Hello there!!!", in: "testView", callback: { (info, err) in
                 if let err = err {
-                    self.log("Display Eye failed: \(err)")
+                    self.log("Display Text failed: \(err)")
                 } else if let displayInfo = info {
-                    self.log("Display Eye succeeded: \(displayInfo)")
+                    self.log("Display Text succeeded: \(displayInfo)")
                 }
             })
             self.log("Executing TransactionId: \(self.activeTransactionId ?? "Empty")")
         })
 
         let displayImageAction = UIAlertAction(title: "Display Image", style: .default, handler: { [unowned self] _ in
-            self.log("Start executing Display Text")
+            self.log("Start executing Display Image")
             let uri = "https://upload.wikimedia.org/wikipedia/commons/d/d2/2010_Cynthia_Breazeal_4641804653.png"
             let name = "cynthia"
             self.activeTransactionId = self.commandExecutor.executeFetchAsset(uri, name: name, callback: { [unowned self] (info, err) in
